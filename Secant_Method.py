@@ -12,11 +12,11 @@ def secant(f, a, b, N):
 
         print(f"Iteração {n}: m = {m_n}, f(m) = {f(m_n)}")
 
-        if abs(f(m_n)) < 1e-10:  # tolerância para considerar solução encontrada
+        if abs(f(m_n)) < 1e-8:
             print("Solução exata ou suficientemente próxima encontrada.")
             return m_n
 
-        # Atualiza os pontos
+     
         a_n = b_n
         b_n = m_n
 
